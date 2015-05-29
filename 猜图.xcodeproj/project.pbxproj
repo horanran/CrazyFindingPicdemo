@@ -12,8 +12,10 @@
 		8E60644E1B16ADC7003F4839 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E60644D1B16ADC7003F4839 /* ViewController.m */; };
 		8E6064511B16ADC7003F4839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E60644F1B16ADC7003F4839 /* Main.storyboard */; };
 		8E6064531B16ADC7003F4839 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6064521B16ADC7003F4839 /* Images.xcassets */; };
-		8E6064561B16ADC7003F4839 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6064541B16ADC7003F4839 /* LaunchScreen.xib */; };
 		8E6064621B16ADC7003F4839 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6064611B16ADC7003F4839 /* __Tests.m */; };
+		8E60646C1B16AE32003F4839 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E60646B1B16AE32003F4839 /* questions.plist */; };
+		8E60646F1B16BF49003F4839 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E60646E1B16BF49003F4839 /* Question.m */; };
+		8E6064711B173332003F4839 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6064701B173332003F4839 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,13 @@
 		8E60644D1B16ADC7003F4839 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8E6064501B16ADC7003F4839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E6064521B16ADC7003F4839 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8E6064551B16ADC7003F4839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8E60645B1B16ADC7003F4839 /* 猜图Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "猜图Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6064601B16ADC7003F4839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E6064611B16ADC7003F4839 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		8E60646B1B16AE32003F4839 /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		8E60646D1B16BF49003F4839 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		8E60646E1B16BF49003F4839 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		8E6064701B173332003F4839 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +86,15 @@
 		8E6064441B16ADC7003F4839 /* 猜图 */ = {
 			isa = PBXGroup;
 			children = (
+				8E60646D1B16BF49003F4839 /* Question.h */,
+				8E60646E1B16BF49003F4839 /* Question.m */,
 				8E6064491B16ADC7003F4839 /* AppDelegate.h */,
 				8E60644A1B16ADC7003F4839 /* AppDelegate.m */,
 				8E60644C1B16ADC7003F4839 /* ViewController.h */,
 				8E60644D1B16ADC7003F4839 /* ViewController.m */,
 				8E60644F1B16ADC7003F4839 /* Main.storyboard */,
 				8E6064521B16ADC7003F4839 /* Images.xcassets */,
-				8E6064541B16ADC7003F4839 /* LaunchScreen.xib */,
+				8E6064701B173332003F4839 /* Launch Screen.xib */,
 				8E6064451B16ADC7003F4839 /* Supporting Files */,
 			);
 			path = "猜图";
@@ -96,6 +103,7 @@
 		8E6064451B16ADC7003F4839 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E60646B1B16AE32003F4839 /* questions.plist */,
 				8E6064461B16ADC7003F4839 /* Info.plist */,
 				8E6064471B16ADC7003F4839 /* main.m */,
 			);
@@ -199,8 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E60646C1B16AE32003F4839 /* questions.plist in Resources */,
+				8E6064711B173332003F4839 /* Launch Screen.xib in Resources */,
 				8E6064511B16ADC7003F4839 /* Main.storyboard in Resources */,
-				8E6064561B16ADC7003F4839 /* LaunchScreen.xib in Resources */,
 				8E6064531B16ADC7003F4839 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E60644E1B16ADC7003F4839 /* ViewController.m in Sources */,
+				8E60646F1B16BF49003F4839 /* Question.m in Sources */,
 				8E60644B1B16ADC7003F4839 /* AppDelegate.m in Sources */,
 				8E6064481B16ADC7003F4839 /* main.m in Sources */,
 			);
@@ -250,14 +260,6 @@
 				8E6064501B16ADC7003F4839 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8E6064541B16ADC7003F4839 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E6064551B16ADC7003F4839 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
